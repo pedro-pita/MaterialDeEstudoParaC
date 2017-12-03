@@ -1,4 +1,33 @@
+//Exercicio 1
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main() {
+	setlocale(LC_ALL, "Portuguese");
+	int numero;
+	printf("Introduza um número \n");
+	scanf("%d", &numero);
+	printf("O quadrado de %d é %d \n", numero, numero * numero)
+}
 
+//Exercicio 2
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main() {
+	setlocale(LC_ALL, "Portuguese");
+	//1
+	int a;
+	printf("Introduza valor \n");
+	scanf("%d", &a);
+	printf("O quadrado de %d é %d \n", a, a * a);
+	
+	//2
+	int b;
+	printf("Introduza temperatura \n");
+	scanf("%d", &b);
+	printf("Conversão de %d graus Celsius em Fahrenheit é %f \n", b, (float)b * (9.0 / 5.0) + 32.0);
+}
 
 //Exercicio 3
 #include <stdio.h>

@@ -14,10 +14,11 @@ struct pessoa{
 
 int main(){
 	/* Inicializando a estrutura */
-	struct pessoa p[2];
+	struct pessoa p[2]        ;
 	
 	/* Acesso ao array da estrutura, o operador '.' 
 	   vem depois das chavetas do indice do array */
+	//p[0].nomePessoa = "Pedro"; da erro, temos de usar o strcpy!
 	strcpy(p[0].nomePessoa,"Sergio");
 	p[0].idade = 30;
 	p[1].idade = p[0].idade - 10;

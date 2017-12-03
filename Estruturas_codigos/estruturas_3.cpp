@@ -26,7 +26,6 @@ int main(){
 	struct pessoa p2 = {"Antonio","St. Cruz",29};
 	printf("%s %d\n",p2.nomePessoa,p2.idade);
 	
-	
 	/* Exemplo de copia (para,de) */
 	strcpy(p.nomePessoa, p1.nomePessoa);
 	strcpy(p.morada, p1.morada);

@@ -17,14 +17,13 @@ struct funcionario{
 
 int main(){
 	/* Inicializando a estrutura */
-	struct pessoa p, p1 = {"Ana","Machico",29,23424234};
+	struct pessoa p, p2 = {"Ana","Machico",29,23424234};
 	struct funcionario f;
-	
+
 	/* Atribuir campos iguais e estrutura do mesmo tipo(pessoa);*/
-	p = p1;
+	p = p2;
 	/* Devolve erro uma vez que os tipos não são o mesmo
 	   funcionario <> de pessoa */
-	f = p;
-	
-	printf("%s %d\n",p.nomePessoa,p.idade);
+	//f = p; Devolve erro uma vez que os tipos não são o mesmo funcionario <> de pessoa
+	printf("%s %d %d\n",p.nomePessoa,p.idade, p.bi);
 }
