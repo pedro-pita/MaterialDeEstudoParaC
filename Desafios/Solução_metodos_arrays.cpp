@@ -8,7 +8,7 @@ void imprimeSequencia(int i, int f){
 	int c;
 	for(c=i;c<=f;c++){
 	if(c >= 52 && c <= 63) continue;
-	printf("%d\t%c\n",c,c);
+		printf("%d\t%c\n",c,c);
 	}
 }
 int main(){
@@ -28,9 +28,9 @@ int main(){
 			n1++;
 		else
 			n0++;
-	printf("%d\n",n);
-	fflush(stdin);
-}
+		printf("%d\n",n);
+		fflush(stdin);
+	}
 	printf("Negativos:%d Positivos: %d\n",n0, n1-1);// n1-1, descontar o '.'
 }
 /* ----------------------*/
